@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Crystal Collector</h1>
+    </div>
+    <div class="intructions">
+        <p>You will be given a random number at the start of the game.</p>
+        <br>
+        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
+            total score.</p>
+        <br>
+        <p>You win the game by matching your total score to ranom number, you lose the game if your total score goes
+            abouve the random number.</p>
+        <br>
+        <p>The value of each crustal is hidden from you until you click on it.</p>
+        <br>
+        <p>Each time when the game starts, the game will change the values of each crystal.</p>
+
+    </div>
+    <div class="numberToMatch">
+        <h2>Number To Get:
+            <span id="computerGuess"></span>
+        </h2>
+    </div>
+    <div class="winsLosses">
+        <h2>Wins:
+            <span id="amountWins"></span>
+            <br>
+            Losses:
+            <span id="amountLosses"></span>
+        </h2>
+    </div>
+    <div class="gems">
+        <div id="img1">
+            <img src="../assets/images/bluegem.png" alt="bluegem">
+        </div>
+        <div id="img2">
+            <img src="../assets/images/greengem.png" alt="greengem">
+        </div>
+        <div id="img3">
+            <img src="../assets/images/red gem.png" alt="redgem">
+        </div>
+        <div id="img4">
+            <img src="../assets/images/yellowgem.jpg" width="200px" alt="yellowgem">
+        </div>
+
+    </div>
+    <div class="userScore">
+        <h2>Your total score is:
+            <span id="endTotal"></span>
+        </h2>
+    </div>
+
+
+
+    <script src="./Javascript/game.js"></script>
+</body>
+
+</html>
